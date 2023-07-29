@@ -1,5 +1,41 @@
+:root {
+    --primary-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --primary-dark-color: #2E2F42;
+    --primary-light-color: #F4F4FD;
+    --primary-white-color: #ffffff;
+    --success-color: #31D0AA;
+    --text-color: #434455;
+    --subtle-text-color: #8E8F99;
+    --accent-color: #E7E9FC;
+    --modal-overlay-color: #2E2F42;
+    --hero-background-color: #2E2F42;
+    --modal-background-color: #FCFCFC;
+    --primary-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
+    --primary-letter-spacing: 2%;
+    --secondary-letter-spacing: 4%;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
+    letter-spacing: var(--primary-letter-spacing);
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 a.logo {
