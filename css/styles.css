@@ -49,9 +49,13 @@ h3 {
     color: var(--primary-dark-color);
 }
 
-.link:active {
+.link:active,
+.link:hover,
+.link:focus,
+.projects-link h3:hover,
+.projects-link h3:active,
+.projects-link h3:focus {
     color: var(--pressed-state-color);
-    text-decoration: underline;
 }
 
 button {
@@ -70,7 +74,9 @@ button {
     font-weight: 500;
 }
 
-button:hover {
+button:hover,
+button:active,
+button:focus {
     background-color: var(--pressed-state-color);
     color: var(--primary-white-color);
 }
@@ -81,6 +87,8 @@ a.logo {
     font-size: 18px;
     letter-spacing: 3%;
     text-transform: uppercase;
+    color: var(--primary-dark-color);
+    text-decoration: none;
 }
 
 footer .logo {
@@ -94,6 +102,12 @@ a.logo span {
 ul.menu {
     font-size: 24px;
     font-weight: 500;
+}
+
+ul.menu a:hover,
+ul.menu a:active,
+ul.menu a:focus {
+    text-decoration: underline;
 }
 
 .hero-image {
