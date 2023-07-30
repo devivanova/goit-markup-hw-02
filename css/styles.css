@@ -31,8 +31,7 @@ body {
     color: var(--primary-dark-color);
 }
 
-.email,
-.phone-number {
+.contacts-list {
     color: var(--text-color);
 }
 
