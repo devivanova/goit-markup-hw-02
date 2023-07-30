@@ -11,37 +11,18 @@
     --modal-background-color: #FCFCFC;
     --primary-font: 'Roboto', sans-serif;
     --logo-font: 'Raleway', sans-serif;
-    --primary-letter-spacing: 2%;
-    --secondary-letter-spacing: 4%;
 }
 
 body {
     font-family: var(--primary-font);
-    color: var(--text-color);
-    letter-spacing: var(--primary-letter-spacing);
-    line-height: 24px;
+    background-color: var(--primary-white-color);
 }
 
-h1 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 60px;
-}
-
-h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--primary-dark-color);
-}
-
-h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--primary-dark-color);
-}
-
-.list {
+.list li{
     list-style-type: none;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .link {
@@ -62,21 +43,18 @@ button {
     cursor: pointer;
 }
 
-.hero-image button {
-    background-color: var(--primary-brand-color);
-    color: var(--primary-white-color);
-}
-
-.filter-button button {
-    background-color: var(--primary-light-color);
-    color: var(--primary-brand-color);
-    font-size: 16px;
+.filter-button {
+    font-family: var(--primary-font);
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand-color);
+    background-color: var(--primary-light-color);
 }
 
-button:hover,
-button:active,
-button:focus {
+.filter-button:hover,
+.filter-button:focus {
     background-color: var(--pressed-state-color);
     color: var(--primary-white-color);
 }
@@ -85,18 +63,18 @@ a.logo {
     font-family: var(--logo-font);
     font-weight: 800;
     font-size: 18px;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
     text-transform: uppercase;
-    color: var(--primary-dark-color);
-    text-decoration: none;
-}
-
-footer .logo {
-    color: var(--primary-light-color)
-}
-
-a.logo span {
     color: var(--primary-brand-color);
+}
+
+.span-header {
+    color: var(--primary-dark-color);
+}
+
+.span-footer {
+    color: var(--primary-light-color);
 }
 
 ul.menu {
@@ -112,9 +90,90 @@ ul.menu a:focus {
 
 .hero-image {
     background-color: var(--primary-dark-color);
-    color: var(--primary-white-color);
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
     text-align: center;
-    height: 600px;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color);
+    font-weight: 700;
+}
+
+.cta-button {
+    background-color: var(--primary-brand-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--pressed-state-color);
+}
+
+.advantages-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02;
+    color: var(--primary-dark-color);
+}
+
+.advantages-list {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.we-doing-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.team-list {
+    background-color: var(--primary-light-color);
+}
+
+.our-team {
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.employee {
+    background-color: var(--primary-white-color);
+}
+
+.employee-position {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+
+}
+
+.projects-title {
+    font-size: 20;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-dark-color);
+}
+
+.projects-category {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
 }
 
 address .list a {
@@ -125,7 +184,12 @@ footer {
     background-color: var(--primary-dark-color);
 }
 
-footer p {
+.footer-text {
     color: var(--primary-light-color);
     font-weight: 400;
+    letter-spacing: 0.02;
+}
+
+.contacts {
+    font-style: normal;
 }
