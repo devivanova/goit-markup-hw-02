@@ -31,6 +31,11 @@ body {
     color: var(--primary-dark-color);
 }
 
+.email,
+.phone-number {
+    color: var(--text-color);
+}
+
 .link:active,
 .link:hover,
 .link:focus,
@@ -202,8 +207,4 @@ footer {
 
 .contacts {
     font-style: normal;
-}
-
-.contacts-list {
-    color: var(--text-color);
 }
