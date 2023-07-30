@@ -31,11 +31,13 @@ h1 {
 h2 {
     font-size: 36px;
     font-weight: 700;
+    color: var(--primary-dark-color);
 }
 
 h3 {
     font-size: 20px;
     font-weight: 500;
+    color: var(--primary-dark-color);
 }
 
 .list {
@@ -47,16 +49,42 @@ h3 {
     color: var(--primary-dark-color);
 }
 
+.link:active {
+    color: var(--pressed-state-color);
+    text-decoration: underline;
+}
+
 button {
     cursor: pointer;
+}
+
+.hero-image button {
+    background-color: var(--primary-brand-color);
+    color: var(--primary-white-color);
+}
+
+.filter-button button {
+    background-color: var(--primary-light-color);
+    color: var(--primary-brand-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: var(--pressed-state-color);
+    color: var(--primary-white-color);
 }
 
 a.logo {
     font-family: var(--logo-font);
     font-weight: 800;
-    font-size: 21px;
+    font-size: 18px;
     letter-spacing: 3%;
     text-transform: uppercase;
+}
+
+footer .logo {
+    color: var(--primary-light-color)
 }
 
 a.logo span {
@@ -69,17 +97,21 @@ ul.menu {
 }
 
 .hero-image {
-    background-color: #2E2F42;
+    background-color: var(--primary-dark-color);
     color: var(--primary-white-color);
     text-align: center;
     height: 600px;
 }
 
-.hero-image button {
-    background-color: var(--primary-brand-color);
-    color: var(--primary-white-color);
-}
-
 address .list a {
     color: var(--primary-font);
+}
+
+footer {
+    background-color: var(--primary-dark-color);
+}
+
+footer p {
+    color: var(--primary-light-color);
+    font-weight: 400;
 }
