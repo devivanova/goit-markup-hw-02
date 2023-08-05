@@ -37,10 +37,7 @@ body {
 
 .link:active,
 .link:hover,
-.link:focus,
-.projects-link h3:hover,
-.projects-link h3:active,
-.projects-link h3:focus {
+.link:focus {
     color: var(--pressed-state-color);
 }
 
@@ -87,12 +84,6 @@ ul.menu {
     font-weight: 500;
 }
 
-ul.menu a:hover,
-ul.menu a:active,
-ul.menu a:focus {
-    text-decoration: underline;
-}
-
 .hero-image {
     background-color: var(--primary-dark-color);
 }
@@ -103,7 +94,6 @@ ul.menu a:focus {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-white-color);
-    font-weight: 700;
 }
 
 .cta-button {
@@ -142,7 +132,6 @@ ul.menu a:focus {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    font-weight: 700;
     color: var(--primary-dark-color);
 }
 
@@ -199,7 +188,6 @@ footer {
 
 .footer-text {
     color: var(--primary-light-color);
-    font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
